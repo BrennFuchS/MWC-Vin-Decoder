@@ -1,0 +1,219 @@
+/* Retro 1999 Web Theme */
+
+
+html, body, #root {
+  height: 97.3%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Tahoma, Verdana, Arial, sans-serif;
+  color: #e6f0ff;
+  -webkit-font-smoothing: antialiased;
+  font-size: 13px;
+}
+
+#root {
+  max-width: 820px;
+  margin: 1.5rem auto;
+  padding: 10px;
+  background-color: #284481;
+  background-image: radial-gradient(circle at 10% 10%, rgba(255,255,255,0.03) 0, rgba(255,255,255,0.00) 2px), linear-gradient(45deg, rgba(255,255,255,0.02) 25%, transparent 25%, transparent 75%, rgba(255,255,255,0.02) 75%);
+  background-size: 36px 36px, 8px 8px;
+  border: 4px groove #c8d8ff;
+  box-shadow: 4px 4px 0 rgba(0,0,0,0.35);
+  max-height: calc(100vh - 24px);
+  overflow: auto;
+}
+
+/* Retro banner */
+.retro-banner {
+  background: #000;
+  color: #ff0000;
+  padding: 4px 8px;
+  border: 3px outset #ffffff;
+  margin-bottom: 8px;
+  overflow: hidden;
+  font-size: 12px;
+}
+
+.retro-marquee {
+  display: inline-block;
+  white-space: nowrap;
+  animation: retro-marquee 12s linear infinite;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 12px;
+}
+
+@keyframes retro-marquee {
+  0% { transform: translateX(200%); }
+  100% { transform: translateX(-100%); }
+}
+
+/* Tab header styled like 1999 buttons */
+.tab-header, .tab-content {
+  background: #e6e6ff;
+  padding: 4px;
+  margin-bottom: 12px;
+  border: 2px solid #888;
+}
+
+.tab-header.no-bg {
+  background: none;
+  border: none;
+}
+
+.tab-header {
+  gap: 4px;
+  display: flex;
+}
+
+.tab-header button {
+  flex: 1;
+}
+
+button, input {
+  padding: 4px 8px;
+  font-size: 12px;
+  cursor: pointer;
+  background: linear-gradient(#ffffff, #cfcfef);
+  border: 2px outset #fff;
+}
+
+input {
+  cursor: text;
+  background: linear-gradient(#ffffff, #e2e2e2);
+  border: 2px inset #fff;
+  box-shadow: none;
+}
+
+input:focus {
+  outline: none;
+  border-color: #66a3ff;
+}
+
+button:hover {
+  background: linear-gradient(#fff8c6, #ffd27a);
+}
+
+input.error {
+  border-color: #ff4444;
+  background: linear-gradient(#ffe6e6, #ffcccc);
+}
+
+button:focus {
+  outline: none;
+  border-color: #66a3ff;
+}
+
+button.active, button:active {
+  background: linear-gradient(#d0e0ff, #9fb3ff);
+  border-style: inset;
+  box-shadow: none;
+}
+
+/* Links and retro accents */
+a {
+  color: #0000cc;
+  text-decoration: underline;
+}
+
+.retro-box {
+  background: rgba(0,0,0,0.05);
+  border: 2px solid #444;
+  padding: 12px;
+  margin-top: 12px;
+}
+
+/* optional pixel feel for headings */
+.retro-footer {
+  margin-top: 14px;
+  padding: 8px;
+  border-top: 2px solid #888;
+  font-size: 12px;
+  color: #cfe8ff;
+}
+
+h1, h2, h3 {
+  font-family: 'Times New Roman', Times, serif;
+  color: #fff395;
+  text-shadow: 1px 1px 0 #000;
+}
+
+@media (max-width: 520px) {
+  #root { margin: 8px; padding: 10px; }
+  .retro-marquee { animation-duration: 8s; }
+}
+
+/* VIN table styles - Retro 1999 */
+.vin-table-wrapper {
+  overflow: auto;
+  overflow-x: auto;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  background: linear-gradient(#f3f7ff, #dfe8ff);
+  padding: 6px;
+  border: 3px groove #aab8ff;
+  box-sizing: border-box;
+  /* keep table from growing past viewport height; allow internal scroll */
+  max-height: calc(100vh - 260px);
+}
+
+.vin-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  font-family: Tahoma, Verdana, monospace;
+  font-size: 12px;
+  color: #001033;
+}
+
+.vin-table th, .vin-table td {
+  padding: 6px 8px;
+  border: 2px solid #888;
+}
+
+.vin-table th {
+  background: linear-gradient(#ffcc66, #ff9966);
+  color: #000;
+  text-align: left;
+  font-weight: bold;
+  border-style: outset;
+}
+
+.vin-table td {
+  background: linear-gradient(#ffffff, #f0f6ff);
+}
+
+/* ensure cells wrap instead of forcing extra height/overflow */
+.vin-table th, .vin-table td {
+  white-space: normal;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
+.vin-table tr:nth-child(odd) td {
+  background: linear-gradient(#ffffff, #eef4ff);
+}
+
+.vin-table tr:hover td {
+  background: #fff8c6;
+}
+
+.vin-table .code {
+  font-family: monospace;
+  background: rgba(0,0,0,0.03);
+  padding: 3px 5px;
+  border: 1px dashed #666;
+  display: inline-block;
+}
+
+.vin-table .value {
+  color: #003366;
+}
+
+@media (max-width: 520px) {
+  .vin-table th, .vin-table td { padding: 6px 8px; font-size: 12px; }
+}

@@ -1,0 +1,205 @@
+const VinNaming = [
+    "Type Version",
+    "Country",
+    "Assembly Plant",
+    "Model",
+    "Body Type",
+    "Version",
+    "Year",
+    "Month",
+    "Serial Number",
+    "Drive",
+    "Engine",
+    "Gearbox",
+    "Axle Ratio",
+    "Axle Lock",
+    "Body Colour",
+    "Vinyl Roof",
+    "Interior Trim",
+    "Radio",
+    "Instrument Panel",
+    "Windshield",
+    "Seats",
+    "Suspension",
+    "Brakes",
+    "Wheels",
+    "Rear Window"
+]
+
+interface Dictionary<T> {
+    [key: number]: T;
+}
+
+const VinData: Dictionary<object | null> = {
+    0: null,
+    1: {
+        U: 'Corris Britain',
+    },
+    2: {
+        A: 'Dagenham',
+        B: 'Manchester',
+        C: 'Saarlouis',
+        K: 'Rheine',
+    },
+    3: {
+        B: 'Rivett',
+    },
+    4: {
+        B: '2D Pillared Sedan',
+    },
+    5: {
+        D: 'L',
+        E: 'LX',
+        G: 'SLX',
+        B: 'GT',
+    },
+    6: {
+        L: 1971,
+        M: 1972,
+        N: 1973,
+        P: 1974,
+        R: 1975,
+        S: 1976,
+    },
+    7: {
+        C:  1,
+        K:  2,
+        D:  3,
+        E:  4,
+        L:  5,
+        Y:  6,
+        S:  7,
+        T:  8,
+        J:  9,
+        U: 10,
+        M: 11,
+        P: 12,
+    },
+    8: null,
+    9: {
+        '1': 'RWD',
+    },
+    10: {
+        NA: 'Standard 2.0',
+        NE: 'High Performance 2.0',
+    },
+    11: {
+        '7': '3-spd Automatic',
+        B: '4-spd Manual',
+    },
+    12: {
+        S: '3.44',
+        B: '3.75',
+        C: '3.89',
+        N: '4.11',
+        E: '4.44',
+    },
+    13: {
+        A: 'Open',
+        B: 'LSD',
+    },
+    14: {
+        A: 'Dark Grey',
+        B: 'Nature White',
+        C: 'Sand',
+        D: 'Asphalt Grey',
+        E: 'Blue',
+        F: 'Sun Yellow',
+        G: 'Dark Navy',
+        H: 'Royal Red',
+        J: 'Red',
+        K: 'Electric Green',
+        L: 'White Pearl',
+        M: 'Spring Green',
+        R: 'Purple',
+        T: 'Yellow',
+        U: 'Sky Blue',
+        V: 'Orange',
+        X: 'Navy Blue',
+        Y: 'Special',
+    },
+    15: {
+        '-': 'Paint',
+        A: 'Black',
+        B: 'White',
+        C: 'Tan',
+        K: 'Blue',
+        M: 'Dark Brown',
+    },
+    16: {
+        N: 'Red',
+        A: 'Black',
+        K: 'Tan',
+        F: 'Blue',
+        Y: 'Special',
+    },
+    17: {
+        '-': 'Radio delete',
+        J: 'Radio',
+    },
+    18: {
+        '-': 'Standard',
+        G: 'Clock',
+        M: 'Tachometer',
+    },
+    19: {
+        '1': 'Clear',
+        '2': 'Tinted',
+        F: 'Sunstrip',
+    },
+    20: {
+        '8': 'Standard',
+        B: 'Bucket Style',
+    },
+    21: {
+        A: 'Standard',
+        B: 'Standard + Stiffened',
+        '4': 'Lowered',
+        M: 'Lowered + Stiffened',
+    },
+    22: {
+        '-': 'Standard',
+        B: 'Power Brakes',
+    },
+    23: {
+        A: '13" Steel',
+        B: '13" Steel + hubcaps',
+        '4': '14" Sport',
+        M: '14" Steel / 14" Octo',
+    },
+    24: {
+        '-': 'Standard',
+        B: 'Heated',
+        M: 'Standard + Window Grille',
+    }
+}
+
+const VinDataLength = [
+    3,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    5,
+    1,
+    2,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+]
+
+export { VinData, VinNaming, VinDataLength }

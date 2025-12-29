@@ -1,0 +1,17 @@
+:root {
+  font-family: arial, helvetica, courier, "times new roman";
+
+  background-image: url('/src/assets/tausta.gif');
+}
+
+#hidden {
+  display: none;
+  visibility: hidden;
+  overflow: hidden;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    
+  }
+}
