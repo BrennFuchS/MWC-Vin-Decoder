@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/MWC-Vin-Decoder/static/css/main.39e06347.css",
+    "main.css": "/MWC-Vin-Decoder/static/css/main.0830e40d.css",
     "main.js": "/MWC-Vin-Decoder/static/js/main.18949206.js",
     "static/js/453.2ca86739.chunk.js": "/MWC-Vin-Decoder/static/js/453.2ca86739.chunk.js",
     "static/media/tausta.gif": "/MWC-Vin-Decoder/static/media/tausta.78e800ce574d52543bb3.gif",
     "index.html": "/MWC-Vin-Decoder/index.html",
-    "main.39e06347.css.map": "/MWC-Vin-Decoder/static/css/main.39e06347.css.map",
+    "main.0830e40d.css.map": "/MWC-Vin-Decoder/static/css/main.0830e40d.css.map",
     "main.18949206.js.map": "/MWC-Vin-Decoder/static/js/main.18949206.js.map",
     "453.2ca86739.chunk.js.map": "/MWC-Vin-Decoder/static/js/453.2ca86739.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.39e06347.css",
+    "static/css/main.0830e40d.css",
     "static/js/main.18949206.js"
   ]
 }
