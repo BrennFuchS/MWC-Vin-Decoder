@@ -10,8 +10,8 @@ function App() {
     <>
       <div className="retro-banner"><div className="retro-marquee">Welcome to 1971-76 Corris Rivett VIN Decoder</div></div>
       <div className="tab-header">
-        <button className={tab == 0 ? "active" : ""} onClick={() => setTab(0)}>VIN Decoder</button>
-        <button className={tab == 1 ? "active" : ""} onClick={() => setTab(1)}>VIN Encoder</button>
+        <button className={tab === 0 ? "active" : ""} onClick={() => setTab(0)}>VIN Decoder</button>
+        <button className={tab === 1 ? "active" : ""} onClick={() => setTab(1)}>VIN Encoder</button>
       </div>
       <div className="tab-content">
         {tab === 0 && <VinDecoder />}
