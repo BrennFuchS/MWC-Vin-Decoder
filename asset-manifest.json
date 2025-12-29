@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.64fbfb29.css",
+    "main.js": "/static/js/main.297dfd3b.js",
+    "static/js/453.2ca86739.chunk.js": "/static/js/453.2ca86739.chunk.js",
+    "static/media/tausta.gif": "/static/media/tausta.78e800ce574d52543bb3.gif",
+    "index.html": "/index.html",
+    "main.64fbfb29.css.map": "/static/css/main.64fbfb29.css.map",
+    "main.297dfd3b.js.map": "/static/js/main.297dfd3b.js.map",
+    "453.2ca86739.chunk.js.map": "/static/js/453.2ca86739.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.64fbfb29.css",
+    "static/js/main.297dfd3b.js"
+  ]
+}
